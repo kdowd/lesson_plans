@@ -1,0 +1,63 @@
+body {
+	background-color: aliceblue;
+	margin: 0;
+	font-family: 'Tilt Neon', sans-serif;
+}
+html {
+	margin-top: 2rem;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: 500;
+}
+
+h3 {
+	color: green;
+}
+
+.short-rule {
+	margin: 2rem 0;
+}
+.main-wrapper {
+	padding: 3rem;
+}
+
+.two-cols {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+.two-cols div:first-of-type {
+	border-right: 1px solid black;
+	padding-right: 0.5rem;
+}
+.two-cols div:last-of-type {
+	padding-left: 1rem;
+}
+
+.two-cols > * {
+	flex: 1;
+	/* outline: 1px solid red; */
+}
+
+.date {
+	color: grey;
+	font-weight: 700;
+	font-size: 1.3rem;
+}
+
+.background-logo {
+	background-image: url('../images/yoobee_black_logo.svg');
+	background-repeat: no-repeat;
+	background-position: top center;
+	background-origin: content-box;
+	background-clip: content-box;
+	background-size: 350px auto;
+}
