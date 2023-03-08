@@ -1,3 +1,8 @@
+:root {
+	--border-lines-col: grey;
+	--border-lines-thickness: 1px;
+}
+
 body {
 	background-color: aliceblue;
 	margin: 0;
@@ -28,14 +33,26 @@ h3 {
 	padding: 3rem;
 }
 
+.fake-line {
+	border-top: var(--border-lines-thickness) solid var(--border-lines-col);
+	margin-top: 1rem;
+}
+
+ul {
+	/* margin: 0;
+	padding: 0; */
+	list-style-position: inside;
+}
+
 .two-cols {
+	border-top: var(--border-lines-thickness) solid var(--border-lines-col);
 	display: flex;
 	justify-content: center;
 	align-items: flex-start;
 }
 
 .two-cols div:first-of-type {
-	border-right: 1px solid black;
+	border-right: var(--border-lines-thickness) solid var(--border-lines-col);
 	padding-right: 0.5rem;
 }
 .two-cols div:last-of-type {
@@ -44,6 +61,9 @@ h3 {
 
 .two-cols > * {
 	flex: 1;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
 	/* outline: 1px solid red; */
 }
 
