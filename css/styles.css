@@ -22,8 +22,11 @@ h6 {
 	font-weight: 500;
 }
 
-h3 {
-	color: green;
+h4 {
+	padding-top: 2rem;
+	font-size: 1.6rem;
+	width: fit-content;
+	color: #339b33;
 }
 
 .short-rule {
